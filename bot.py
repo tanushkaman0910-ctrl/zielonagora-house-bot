@@ -53,6 +53,10 @@ def check_otodom():
     soup = BeautifulSoup(response.text, "lxml")
 
     links = soup.find_all("a", href=True)
+    print("Кількість посилань:", len(links))
+
+for link in links[:20]:
+    print(link.get("href"))
 
     for link in links:
         href = link["href"]
