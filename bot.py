@@ -76,4 +76,4 @@ def check_otodom():
 
         sent_links.add(href)
         if __name__ == "__main__":
-    check_otodom()
+            check_otodom()
