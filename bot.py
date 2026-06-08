@@ -45,7 +45,7 @@ def load_sent_links():
 def save_sent_link(link):
     with open(SENT_FILE, "a", encoding="utf-8") as f:
         f.write(link + "\n")
-        def check_otodom():
+def check_otodom():
     sent_links = load_sent_links()
 
     response = requests.get(OTODOM_URL, headers=HEADERS)
@@ -75,6 +75,5 @@ def save_sent_link(link):
         save_sent_link(href)
 
         sent_links.add(href)
-
-if __name__ == "__main__":
-        check_otodom()
+        if __name__ == "__main__":
+    check_otodom()
