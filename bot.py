@@ -49,6 +49,7 @@ def check_otodom():
     sent_links = load_sent_links()
 
     response = requests.get(OTODOM_URL, headers=HEADERS)
+        send_telegram("Бот запустився")
 
     soup = BeautifulSoup(response.text, "lxml")
 
