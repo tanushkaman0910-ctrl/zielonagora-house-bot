@@ -55,8 +55,6 @@ def check_otodom():
     links = soup.find_all("a", href=True)
     print("Кількість посилань:", len(links))
 
-for link in links[:20]:
-    print(link.get("href"))
 
     for link in links:
         href = link["href"]
